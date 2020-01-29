@@ -4,50 +4,35 @@
 	<title>Basic 01</title>
 </head>
 <body>
-	<button onclick="age()">Click me</button>
+	<!--<button onclick="age()">Click me</button>-->
 	<p id="p">Your age</p>
 	<script type="text/javascript">
 
 		
-	function age(birthyear){
-		var date = new Date();
-		var current = date.getFullYear();
-		birthyear = prompt("type your age")
-		var old = current - birthyear;
-		document.write(old);
+	//function age(birthyear){
+		//var date = new Date();
+		//var current = date.getFullYear();
+		//birthyear = prompt("type your age")
+		//var old = current - birthyear;
+		//document.write(old);
 
 	
-		}
+		//}
 
-		// age(prompt("type your age"));
-
-
-		
-
-		// var birthyear = 1988;
-		// var old = current - birthyear;
+	//function Truncate(string, size){
+	//var newString = string.substring(0, size);
+	//document.write(newString);
 
 		
-
 		
+	//}
+		//Truncate(prompt("type words"), prompt("write a size"));
 
+function  Information(firstname,surname,age,description){
+	document.write((" Hi my name is " + firstname + surname + " and I'm " + age + description));
 
-	// 	var result = n-c;
-
-	// }
- 	
-
-
-
-		
-		// function age() {
-		// 	var result = (i - c);
-		// 	console.log(result)
-
-			
-		// }
-		
-
+}
+	Information(prompt("name"),prompt("lastname"),prompt("age"),prompt("description"));
 	</script>
 
 </body>
