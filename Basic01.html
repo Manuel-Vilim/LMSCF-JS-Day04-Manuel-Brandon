@@ -4,6 +4,7 @@
 	<title>Basic 01</title>
 </head>
 <body>
+	<button onclick="age()">Click me</button>
 	<p id="p">Your age</p>
 	<script type="text/javascript">
 
@@ -11,13 +12,14 @@
 	function age(birthyear){
 		var date = new Date();
 		var current = date.getFullYear();
-		// var birthyear = prompt("type your age")
+		birthyear = prompt("type your age")
 		var old = current - birthyear;
 		document.write(old);
+
 	
 		}
 
-		age(prompt("type your age"));
+		// age(prompt("type your age"));
 
 
 		
