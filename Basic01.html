@@ -6,8 +6,8 @@
 <body>
 	<!--<button onclick="age()">Click me</button>-->
 	<h3>How many nights are you looking for?</h3>
-	<input id="num" type="numbers" ></input><br>
-	<button type="Reserve">Submit</button>
+	<input id="num" type="numbers"></input><br>
+	<button type="Reserve" onclick="check()">Submit</button>
 	<p id="None"></p>
 
 	<script type="text/javascript">
@@ -54,7 +54,21 @@ function HotelConstructor(name, rooms, availabilty) {
 
 	var hotel = [mgm, luxor, trumptower]
 
+	console.table(hotel)
 
+
+function check(){
+	var nights = parseInt(document.getElementById("num").value);
+
+	for(var i = 0 ; i < hotel.length; i++){
+		if(nights > hotel[i].availabilty){
+			console.log("Not available");
+		}else {
+			console.log("available");
+		}
+	}
+
+}
  	
 
 
