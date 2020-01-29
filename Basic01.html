@@ -8,15 +8,16 @@
 	<script type="text/javascript">
 
 		
-	function age(){
+	function age(birthyear){
 		var date = new Date();
 		var current = date.getFullYear();
-		var birthyear = prompt("type your age")
+		// var birthyear = prompt("type your age")
 		var old = current - birthyear;
 		document.write(old);
+	
 		}
 
-		age();
+		age(prompt("type your age"));
 
 
 		
