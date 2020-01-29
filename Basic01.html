@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Basic 01</title>
+	<title>Intermediate</title>
 </head>
 <body>
 	<!--<button onclick="age()">Click me</button>-->
-	<p id="p">Your age</p>
+	<h3>How many nights are you looking for?</h3>
+	<input id="num" type="numbers" ></input><br>
+	<button type="Reserve">Submit</button>
+	<p id="None"></p>
+
 	<script type="text/javascript">
 
 		
@@ -28,11 +32,45 @@
 	//}
 		//Truncate(prompt("type words"), prompt("write a size"));
 
-function  Information(firstname,surname,age,description){
-	document.write((" Hi my name is " + firstname + surname + " and I'm " + age + description));
+//function  Information(firstname,surname,age,description){
+//	document.write((" Hi my name is " + firstname + surname + " and I'm " + age + description));
+
+//}
+//	Information(prompt("name"),prompt("lastname"),prompt("age"),prompt("description"));
+
+
+
+function HotelConstructor(name, rooms, availabilty) {
+	this.name = name;
+	this.rooms = rooms;
+	this.availabilty = availabilty;	
 
 }
-	Information(prompt("name"),prompt("lastname"),prompt("age"),prompt("description"));
+
+	var mgm = new HotelConstructor("MGM", 80, Math.floor(Math.random()*11));
+	var luxor = new HotelConstructor("Luxor", 70, Math.floor(Math.random()*11));
+	var trumptower = new HotelConstructor("Trump Tower", 50, Math.floor(Math.random()*11)); 
+
+
+	var hotel = [mgm, luxor, trumptower]
+
+
+ 	
+
+
+
+
+
+
+
+
+
+
+//document.write( "Hotel Name: " + hotel[0].name+"<br>" + " Total rooms: " + hotel[0].rooms+"<br>" + " Rooms booked: "+ hotel[0].booked+"<br> <hr>"+"Hotel Name: " + hotel[1].name+"<br>" + " Total rooms: " + hotel[1].rooms+"<br>" + " Rooms booked: "+ hotel[1].booked+"<br><hr>"+"Hotel Name: " + hotel[2].name+"<br>" + " Total rooms: " + hotel[2].rooms+"<br>" + " Rooms booked: "+ hotel[2].booked+"<br><hr>");
+ 
+	
+		
+
 	</script>
 
 </body>
